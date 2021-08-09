@@ -47,7 +47,7 @@
         <div class="nav-left">
             <ul>
                 <!-- Loop through cat data -->
-                {% for cat in aboutme %}
+                {% for cat in cats %}
                 <li>
                     <a href="/aboutme/{{ cat.name | slug }}/">{{ cat.name }}</a>
                 </li>
