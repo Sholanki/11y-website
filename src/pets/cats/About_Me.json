@@ -1,0 +1,13 @@
+{
+  "name": "Sholanki",
+  "title": "About Me",
+  "description": "Hi! I am a programmer who is a noob on 11ty. I like to do something new and 11ty is something I have stumbled upon",
+  "hobbies": "Currently, trying out new things in code, reading, journaling",
+  "photoURL": "https://pbs.twimg.com/profile_images/1247160798561988608/04TTUFNB_400x400.jpg",
+  "twitter": "https://twitter.com/BiswasSholanki",
+  "workName": "Works I have done",
+  "workPhotoURL": "https://pbs.twimg.com/profile_banners/1064408423171801088/1586181279/1500x500",
+  "projects": "I have worked in banking projects, accounting projects and currently with travel and airline projects. But right now, I am exploring with 11ty project and creating this website",
+  "experience": "In 11ty, 1 year of frustration and then this current working website which is still work in progress. In Ghost, 1 year and I am still a noob, in Java, I do not remember a single thing and C and C++ is my bread and butter",
+  "passion": "I am passionate about CSS and making the front look beautiful and tinkering with new things. As of now, in 11ty rocks, blog community section has taken up my fancy. It was all about cats and dogs files and who gets more votes. I created cards about me and what I have been upto in this new twilight zone and created this nifty little website. I fiddled with css, column and grid properties and then I started taking values from json and with help of 11ty and reading of json data, this nifty thing was created. I also had super fun figuring whether I can accomplish this task using one json file or two json files and I figured that 1 json file is good enough. Well, that's about it for blog community. Next in the works is one page creation of website using 11ty rocks and then integrating both together."
+}

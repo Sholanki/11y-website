@@ -1,0 +1,89 @@
+---
+layout: base.njk
+---
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 16px;
+  width: 90%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<h2>{{ title }}</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{{ photoURL }}" style="width:100%;"/>
+        <div class="container">
+          <ul>
+            <li><strong>Name</strong>: {{ name }}</li>
+            <li><strong>Title</strong>: {{ title }}</li>
+            <li><strong>Description</strong>: {{ description if description else 'N/A' }}</li>
+            <li><strong>Hobbies</strong>: {{ hobbies if hobbies else 'N/A' }}</li>
+            {% if twitter %}
+              <li><strong>twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li>
+            {% endif %}
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{ workPhotoURL }}" style="width:100%"/>
+        <div class="container">
+          <ul>
+            <li><strong>Title</strong>: {{ workName }}</li>
+            <li><strong>Projects</strong>: {{ projects if projects else 'N/A' }}</li>
+            <li><strong>Experience</strong>: {{ experience if experience else 'N/A' }}</li>
+            <li><strong>What I am about right now</strong>: {{ passion }}</li>
+            {% if twitter %}
+              <li><strong>Twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li>
+            {% endif %}
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+</html>
