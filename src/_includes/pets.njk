@@ -61,12 +61,12 @@ layout: base.njk
       <img src="{{ photoURL }}" style="width:100%;"/>
         <div class="container">
           <ul>
-            <li><strong>Name</strong>: {{ name }}</li>
-            <li><strong>Title</strong>: {{ title }}</li>
-            <li><strong>Description</strong>: {{ description if description else 'N/A' }}</li>
-            <li><strong>Hobbies</strong>: {{ hobbies if hobbies else 'N/A' }}</li>
+            <li><strong>Name</strong>: {{ name }}</li><br>
+            <li><strong>Title</strong>: {{ title }}</li><br>
+            <li><strong>Description</strong>: {{ description if description else 'N/A' }}</li><br>
+            <li><strong>Hobbies</strong>: {{ hobbies if hobbies else 'N/A' }}</li><br>
             {% if twitter %}
-              <li><strong>twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li>
+              <li><strong>Twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li><br>
             {% endif %}
           </ul>
         </div>
@@ -78,12 +78,12 @@ layout: base.njk
       <img src="{{ workPhotoURL }}" style="width:100%"/>
         <div class="container">
           <ul>
-            <li><strong>Title</strong>: {{ workName }}</li>
-            <li><strong>Projects</strong>: {{ projects if projects else 'N/A' }}</li>
-            <li><strong>Experience</strong>: {{ experience if experience else 'N/A' }}</li>
-            <li><strong>What I am about right now</strong>: {{ passion }}</li>
+            <li><strong>Title</strong>: {{ workName }}</li><br>
+            <li><strong>Projects</strong>: {{ projects if projects else 'N/A' }}</li><br>
+            <li><strong>Experience</strong>: {{ experience if experience else 'N/A' }}</li><br>
+            <li><strong>What I am about right now</strong>: {{ passion }}</li><br>
             {% if twitter %}
-              <li><strong>Twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li>
+              <li><strong>Twitter</strong>: <a href="{{ twitter }}">{{ name }}</a></li><br>
             {% endif %}
           </ul>
         </div>
